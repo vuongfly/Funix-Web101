@@ -1,0 +1,149 @@
+body, h1, h2, h3 {
+    margin: 0px;
+}
+ul {
+    padding-left: 15px;
+}
+
+.cv-document {
+	box-sizing: border-box;
+	border: none;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: arial, sans-serif, tahoma;
+	font-size: 10pt;
+}
+
+.cv-page {
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    width: 900px;
+    min-height: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    background-color: #fff;
+    position: relative;
+    padding: 40px
+}
+p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+#info {
+}
+#name {
+    font-weight: bold;
+    font-size: 30px;
+    color: #0e2452;
+}
+.section {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.section-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.section-title {
+    text-transform: uppercase;
+    border-bottom: black solid 1px;
+}
+.avatar {
+    width: 113px;
+    height: 113px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.avatar>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section>div {
+    display: inline-block;
+}
+
+.info-details>div {
+    display: inline-block;
+}
+.info-details {
+    line-height: 1;
+}
+.label {
+    width: 140px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.details {
+    font-size: 17px;
+}
+.content-details>p:first-child {
+    font-weight: bold;
+}
+.section-content>ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    border-bottom: lightgray solid 1px;
+    width: 100%;
+}
+
+.section-content ul li {
+    margin-right: 10px;
+}
+
+.section-content>ul>li:first-child {
+    width: 150px;
+}
+ul .sub-details {
+    list-style-type: "- ";
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.sub-details li {
+}
+
+li.skill {
+    font-weight: bold;
+}
+li.certi {
+    text-transform: uppercase;
+}
+#hobby ul {
+    border: none;
+    list-style-type: disc;
+    padding-left: 15px;
+}
+.project-info .title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.project-info .time {
+}
+.project-info li div {
+    display: inline-block;
+}
+.project-lbl {
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
