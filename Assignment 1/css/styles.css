@@ -48,9 +48,10 @@ p {
     color: #0e2452;
 }
 .section {
-    width: 100%;
+    width: auto;
     position: relative;
     margin-bottom: 10px;
+    margin-left: 10%;
 }
 .section-content {
     margin-top: 10px;
@@ -62,8 +63,8 @@ p {
     border-bottom: black solid 1px;
 }
 .avatar {
-    width: 113px;
-    height: 113px;
+    width: 150px;
+    height: 200px;
     position: absolute;
     top: 0;
     right: 0;
@@ -108,7 +109,8 @@ p {
 }
 
 .section-content>ul>li:first-child {
-    width: 150px;
+    flex: 0 0 150px;
+    /*width: 150px;*/
 }
 ul .sub-details {
     list-style-type: "- ";
