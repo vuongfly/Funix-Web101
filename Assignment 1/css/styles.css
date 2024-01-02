@@ -149,3 +149,13 @@ a {
     text-decoration: none;
     color: blue;
 }
+
+.education-item, .experience-item, .activity-item, .skill-item, .certificate-item {
+    display: flex;
+}
+.time-range, .skill {
+    width: 200px;
+}
+.content-details, .skill-lvl, .certi {
+    flex: 1;
+}
