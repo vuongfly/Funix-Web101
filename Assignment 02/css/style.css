@@ -16,18 +16,44 @@ section > .container{
 
 #nav-bar {
     /*text-align: center;*/
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: auto;
-    align-items: center;
-    justify-items: center;
+    display: flex;
     justify-content: center;
-    /*align-content: center;*/
+    position: relative;
+    align-items: center;
+    height: 70px;
+    text-transform: uppercase;
 }
 .nav-bar-item {
-    padding-left: 10px;
-    padding-right: 10px;
+    height: 68px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 1px solid darkgray;
+    border-collapse: collapse;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+/*.nav-bar-main-item {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;;*/
+/*    padding-left: 60px;*/
+/*    padding-right: 60px;*/
+/*    border: 1px solid darkgray;*/
+/*    border-collapse: collapse;*/
+/*}*/
+.avatar_1 {
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 150px;
+    height: 150px;
+}
+.avatar_1>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: white 5px solid;
+    overflow: hidden;
 }
 
 .banner-container {
@@ -46,6 +72,7 @@ section > .container{
 }
 .abs-centered {
     position: absolute;
+    width: max-content;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -118,7 +145,7 @@ p {
     border-bottom: black solid 1px;
 }
 .avatar {
-    width: 150px;
+    width: 200px;
     height: 200px;
     position: absolute;
     top: 0;
@@ -155,6 +182,7 @@ p {
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-direction: column;
     border-bottom: lightgray solid 1px;
     width: 100%;
 }
@@ -164,7 +192,7 @@ p {
 }
 
 .section-content>ul>li:first-child {
-    flex: 0 0 150px;
+    /*flex: 0 0 150px;*/
     /*width: 150px;*/
 }
 ul .sub-details {
