@@ -43,17 +43,19 @@ section > .container{
 /*    border-collapse: collapse;*/
 /*}*/
 .avatar_1 {
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: white 10px solid;
+    z-index: 1;
+    position: relative;
 }
 .avatar_1>img {
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: white 5px solid;
-    overflow: hidden;
+    height: auto;
 }
 
 .banner-container {
