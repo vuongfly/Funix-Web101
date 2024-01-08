@@ -4,6 +4,12 @@
     border-collapse: collapse;
     box-sizing: border-box;
 }
+.cl-blue-icon {
+    color: #189cdb;
+    vertical-align: middle;
+    margin-right: 5px;
+    padding-bottom: 3px;
+}
 
 img {
     width: 100%;
@@ -39,6 +45,7 @@ img {
     margin: auto;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 .certi-grid-layout {
@@ -93,11 +100,15 @@ img {
     text-transform: uppercase;
 }
 
+#nav-bar i{
+}
+
 .nav-bar-item {
     height: 68px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
     border-collapse: collapse;
     display: flex;
     align-items: center;
@@ -274,6 +285,11 @@ a {
     border-radius: 50%;
     border: deepskyblue 1px solid;
 }
+.hobby-icon >i {
+    font-size: 30px;
+    margin-left: 9px;
+    margin-top: 9px;
+}
 
 .language-item {
     margin-bottom: 10px;
@@ -351,4 +367,23 @@ a {
 
 .pro-org {
     text-transform: uppercase;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    padding: 10px;
+    margin: 10px;
+}
+.contact-item i {
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+.contact a {
+    color: gray;
 }
