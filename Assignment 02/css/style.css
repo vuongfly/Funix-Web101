@@ -119,15 +119,16 @@ img {
     align-content: center;
 }
 
+/*Set khung cho img avatar*/
 .avatar {
     margin-left: 60px;
     margin-right: 60px;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    overflow: hidden;
+    overflow: hidden; /*Ẩn phần ảnh thừa*/
     border: white 10px solid;
-    z-index: 1;
+    z-index: 1; /*Cho phần div này đè lên trên các thẻ khác*/
     position: relative;
 }
 
@@ -285,6 +286,7 @@ a {
 }
 
 .hobby-icon {
+    font-size: 0.9em;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -358,10 +360,6 @@ a {
 .pro-details table td {
     border-bottom: lightgrey 1px solid;
 }
-
-/*.pro-item > div {*/
-/*    border: lightgrey 1px solid;*/
-/*}*/
 
 .pro-time {
     color: white;
