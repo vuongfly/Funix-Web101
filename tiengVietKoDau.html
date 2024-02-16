@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese Input Without Diacritics</title>
+</head>
+<body>
+
+<label for="vietnameseInput">Nhập tiếng Việt không dấu:</label>
+<input type="text" id="vietnameseInput">
+
+<script>
+    document.getElementById('vietnameseInput').addEventListener('input', function (event) {
+        let inputValue = event.target.value;
+        // Loại bỏ các dấu trong chuỗi nhập
+        let vietnameseWithoutDiacritics = inputValue
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')  // Loại bỏ các dấu (trừ đấu của 'đ')
+            .replace(/\u0111/g, 'd');         // Chuyển 'đ' thành 'd'
+        // Cập nhật giá trị của input
+        event.target.value = vietnameseWithoutDiacritics;
+    });
+</script>
+
+</body>
+</html>
