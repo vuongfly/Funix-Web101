@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-img">
+<div class="content">
+    <header class="py-2">
+        <div class="container grid grid-1 center">
+            <h1 id="title" class="my-2">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+    </header>
+    <div class="section-form">
+        <form action="" id="survey-form" class="grid grid-1 center my-2">
+            <div class="form-group grid grid-1 center">
+                <label for="name" class="">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" class="input-text p-1">
+            </div>
+            <div class="form-group grid grid-1 center">
+                <label for="email" class="">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" class="input-text p-1">
+            </div>
+            <div class="form-group grid grid-1 center">
+                <label for="age" class="">Age</label>
+                <input type="number" name="age" id="age" placeholder="Age" class="input-text p-1">
+            </div>
+            <div class="form-group grid grid-1 center">
+                <label for="role" class="">Which option best describes your current role</label>
+                <select name="role" id="role" class="input p-1">
+                    <option value="">Select an option--</option>
+                    <option value="cat">Challenges</option>
+                    <option value="cat">Projects</option>
+                    <option value="cat">Community</option>
+                    <option value="cat">Open Source</option>
+                </select>
+            </div>
+            <div class="form-group grid grid-1 center">
+                <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+                <div class="check-box-form">
+                    <input type="checkbox" id="front-end-projects" name="field"/>
+                    <label for="front-end-projects">Front-end Projects</label>
+                </div>
+                <div class="check-box-form">
+                    <input type="checkbox" id="back-end-projects" name="field"/>
+                    <label for="back-end-projects">Back-end Projects</label>
+                </div>
+                <div class="check-box-form">
+                    <input type="checkbox" id="data-visualization" name="field"/>
+                    <label for="data-visualization">Data Visualization</label>
+                </div>
+                <div class="check-box-form">
+                    <input type="checkbox" id="challenges" name="field"/>
+                    <label for="challenges">Challenges</label>
+                </div>
+                <div class="check-box-form">
+                    <input type="checkbox" id="open-source-community" name="field"/>
+                    <label for="open-source-community">Open Source Community</label>
+                </div>
+                <div class="check-box-form">
+                    <input type="checkbox" id="gitter-help-rooms" name="field"/>
+                    <label for="gitter-help-rooms">Gitter help rooms</label>
+                </div>
+                <div class="check-box-form">
+                    <input type="checkbox" id="videos" name="field"/>
+                    <label for="videos">Videos</label>
+                </div>
+                <div class="check-box-form">
+                    <input type="checkbox" id="city-meetups" name="field"/>
+                    <label for="city-meetups">City Meetups</label>
+                </div>
+                <div class="check-box-form">
+                    <input type="checkbox" id="wiki" name="field"/>
+                    <label for="wiki">Wiki</label>
+                </div>
+                <div class="check-box-form">
+                    <input type="checkbox" id="forum" name="field"/>
+                    <label for="forum">Forum</label>
+                </div>
+                <div class="check-box-form">
+                    <input type="checkbox" id="additional-courses" name="field"/>
+                    <label for="additional-courses">Additional Courses</label>
+                </div>
+            </div>
+            <div class="form-group grid grid-1 center">
+                <label for="suggestion" class="">Any comments or suggestions?</label>
+                <textarea  id="suggestion" placeholder="Enter your comments here" class="input p-1"></textarea>
+            </div>
+            <div class="form-group grid grid-1 center">
+                <button type="submit" id=survey-submit>Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
