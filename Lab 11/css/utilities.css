@@ -131,6 +131,10 @@
     color: #fff;
 }
 
+.block {
+    display: block;
+}
+
 .flex {
     display: flex;
     justify-content: center;
