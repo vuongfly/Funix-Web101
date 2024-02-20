@@ -138,6 +138,10 @@
     height: 100%;
 }
 
+.flex-row {
+    flex-direction: column;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
