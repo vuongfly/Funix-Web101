@@ -1,0 +1,47 @@
+.bg-img1 {
+    background-color: black;
+    background-size: cover;
+    background-image: url(../images/show-case-bg.jpg);
+}
+
+.bg-img2 {
+    background-color: black;
+    background-size: cover;
+    background-image: url(../images/show-case-bg.jpg);
+}
+
+.bg-img3 {
+    background-color: black;
+    background-size: cover;
+    background-image: url(../images/show-case-bg.jpg);
+}
+
+.carousel {
+}
+
+.carousel-item {
+    height: fit-content;
+}
+
+.carousel-caption {
+}
+
+.carousel-indicators{
+
+}
+
+.carousel-control-prev {
+
+}
+
+.carousel-control-prev-icon {
+
+}
+
+.carousel-control-next {
+
+}
+
+.carousel-control-next-icon {
+
+}
