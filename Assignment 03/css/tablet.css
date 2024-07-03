@@ -2,4 +2,16 @@
     .avatar {
         display: none;
     }
+
+    .pro-container {
+        margin: auto;
+    }
+
+    .row.certification .certi-container:nth-child(odd) {
+        border-left: 1px solid var(--certi-border-color);
+    }
+
+    .row.certification .certi-container:nth-child(n+4) {
+        border-top: 1px solid var(--certi-border-color);
+    }
 }

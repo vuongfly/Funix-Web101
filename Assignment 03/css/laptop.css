@@ -1,4 +1,21 @@
 @media screen and (min-width: 992px) {
 
+    .certi-item {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        row-gap: 10px;
+        column-gap: 30px;
+        box-sizing: content-box;
+    }
+
+    .row.certification .certi-container:nth-child(odd) {
+        border-left: 1px solid var(--certi-border-color);
+    }
+
+    .row.certification .certi-container:nth-child(n+4) {
+        border-top: 1px solid var(--certi-border-color);
+    }
+
+
 
 }

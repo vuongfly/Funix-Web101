@@ -15,4 +15,12 @@
         padding: 10px;
     }
 
+    .row.certification .certi-container:nth-child(odd) {
+        border: none;
+    }
+
+    .row.certification .certi-container:nth-child(even) {
+        border: none;
+    }
+
 }
