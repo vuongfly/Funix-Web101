@@ -374,6 +374,9 @@ a {
     margin-left: 20px;
     padding: 5px 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
+    background-color: #f6ea85;
+    width: auto;
+    max-width: fit-content;
 }
