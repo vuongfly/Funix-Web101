@@ -53,36 +53,41 @@
                 </div>
                 <div class="col-md-6 col-sm-12 border-light-grey bg-light-grey" id="info">
                     <p class="section-title ps-lg-5 ps-md-3 ps-sm-1">Thông tin cá nhân</p>
-                    <div class="ps-lg-5 ps-md-3 ps-sm-1">
-                        <div class="label">Ngày sinh</div>
-                        <div>09/08/1996</div>
-                        <div class="label">Giới tính</div>
-                        <div>Nam</div>
-                        <div class="label">Điện thoại</div>
-                        <div>(+84) 347 545 020</div>
-                        <div class="label">Email</div>
-                        <div>vuongnvfx31745@funix.edu.vn</div>
-                        <div class="label">Địa chỉ</div>
-                        <div>Hà Nội, Việt Nam</div>
-                        <div class="label">Website</div>
-                        <div>https://www.facebook.com/Vuong.Fly/</div>
+                    <div id="personal-info" class="ps-lg-5 ps-md-3 ps-sm-1 d-none">
+                        <div><b>Ngày sinh: </b>09/08/1996</div>
+                        <div><b>Giới tính: </b><span>Nam</span></div>
+                        <div><b>Điện thoại: </b><span>(+84) 347 545 020</span></div>
+                        <div><b>Email: </b><span id="my-email">vuongnvfx31745@funix.edu.vn</span></div>
+                        <div><b>Địa chỉ: </b><span>Hà Nội, Việt Nam</span></div>
+                        <div><b>Website: </b><span>https://www.facebook.com/Vuong.Fly/</span></div>
+                    </div>
+                    <div id="input-email-form" class="container .info-input">
+                        <form>
+                            <div class="form-group">
+                                <input
+                                        pattern="^(([^&lt;&gt;()[\]\\.,;:\s@&quot;]+(\.[^&lt;&gt;()[\]\\.,;:\s@&quot;]+)*)|(&quot;.+&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$"
+                                        class="form-control" id="email-input" placeholder="Enter email">
+                                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <button id="btn-info" type="button" class="btn btn-primary" onclick="checkEmail()">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
 
         <!--    Thong tin nghe nghiep    -->
-        <div class="container">
-            <div class="row g-4">
-                <!--    Kinh Nghiem     -->
-                <div class="section col-lg-4 col-md-6 col-sm-12">
+        <div class="container row g-4 m-auto" id="career-info">
+            <!--    Kinh Nghiem     -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section">
                     <div class="container ps-4 pt-4">
                         <div class="row">
                             <span class="col-9 section-title">Kinh nghiệm</span>
                             <i class="col-3 fa-solid fa-briefcase section-icon"></i>
                         </div>
                     </div>
-                    <div class="section-content-1">
+                    <div class="section-content">
 
                         <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
                         <div class="exp-item">
@@ -120,18 +125,19 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
+            </div>
 
-                <!--    Hoc Van     -->
-                <div class="section col-lg-4 col-md-6 col-sm-12">
+            <!--    Hoc Van     -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section">
                     <div class="container ps-4 pt-4">
                         <div class="row">
                             <span class="col-9 section-title">Học vấn</span>
                             <i class="col-3 fa-solid fa-pen section-icon"></i>
                         </div>
                     </div>
-                    <div class="section-content-1">
+                    <div class="section-content">
                         <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
                         <div class="edu-item">
                             <span class="item-title">FUNIX</span> <br>
@@ -153,16 +159,18 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!--    Hoat Dong     -->
-                <div class="section col-lg-4 col-md-6 col-sm-12">
+            <!--    Hoat Dong     -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section">
                     <div class="container ps-4 pt-4">
                         <div class="row">
                             <span class="col-9 section-title">Hoạt động</span>
                             <i class="col-3 fa-solid fa-briefcase section-icon"></i>
                         </div>
                     </div>
-                    <div class="section-content-1">
+                    <div class="section-content">
 
                         <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
                         <div class="activity-item">
@@ -189,11 +197,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!--    So Thich    -->
-                <div class="section col-lg-4 col-md-6 col-sm-12">
+            <!--    So Thich    -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section">
                     <div class="section-title ps-4">Sở thích</div>
-                    <div class="container">
+                    <div class=" container">
                         <div class="row">
                             <div class="col-6 col-sm-3">
                                 <div class="icon-container">
@@ -230,11 +240,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!--    Ngon Ngu    -->
-                <div class="section col-lg-4 col-md-6 col-sm-12">
+            <!--    Ngon Ngu    -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section">
                     <div class="section-title ps-4">Ngôn ngữ</div>
-                    <div class="language ps-4">
+                    <div class=" language ps-4">
                         <div class="language-item">
                             <span>Tiếng Anh - IELTS 5.0</span><br>
                             <span class="blue-line"></span>
@@ -243,11 +255,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!--    Ky Nang    -->
-                <div class="section col-lg-4 col-md-6 col-sm-12">
+            <!--    Ky Nang    -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section">
                     <div class="section-title ps-4">Kỹ năng</div>
-                    <div class="language ps-4">
+                    <div class=" language ps-4">
                         <div class="language-item">
                             <span>HTML/CSS: Fundamental</span><br>
                             <span class="blue-line"></span>
@@ -446,5 +460,10 @@
     </div>
 
 </div>
+
+<div class="d-none view-more" id="view-more-btn">
+    <span>View more</span>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>

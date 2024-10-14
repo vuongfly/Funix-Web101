@@ -196,12 +196,11 @@ ul {
 }
 
 .section {
-    margin-bottom: 10px;
-    padding-bottom: 50px;
     border: lightgray 1px solid;
+    position: relative;
 }
 
-.section-content-1 {
+.section-content {
     padding: 10px;
     padding-left: 30px;
     display: grid;
@@ -361,4 +360,10 @@ a {
 
 .contact a {
     color: gray;
+}
+
+.view-more {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
