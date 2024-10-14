@@ -204,8 +204,11 @@ ul {
     padding: 10px;
     padding-left: 30px;
     display: grid;
-    grid-template-columns: 40px 1fr;
     row-gap: 25px;
+}
+
+.grid-col-40px {
+    grid-template-columns: 40px 1fr;
 }
 
 .section-title {
@@ -363,7 +366,14 @@ a {
 }
 
 .view-more {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    /*position: absolute;*/
+    /*display: block;*/
+    /*bottom: 20px;*/
+    /*left: 20px;*/
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
