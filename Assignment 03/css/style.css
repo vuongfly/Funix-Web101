@@ -75,6 +75,7 @@ img, .avatar > img {
 
 .certi-container {
     padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 .certi-content {
@@ -139,9 +140,7 @@ img, .avatar > img {
     width: 100%;
 }
 
-.name {
-    font-size: 4em;
-}
+
 
 .job-desc {
     font-size: 1.7em;
@@ -308,7 +307,8 @@ a {
     color: var(--black-color);
     text-transform: uppercase;
     padding: 15px;
-    border: lightgrey 1px solid;
+    border-top: lightgrey 1px solid;
+    border-bottom: lightgrey 1px solid;
 }
 
 .pro-role {
@@ -317,21 +317,20 @@ a {
     justify-content: space-around;
     align-items: center;
     padding: 5px;
-    border: lightgrey 1px solid;
 }
 
 .pro-details table tr td:first-child {
     width: 80px;
 }
 .pro-details {
-    border: lightgrey 1px solid;
+    /*border: lightgrey 1px solid;*/
 }
 
 .pro-details table td {
     padding: 10px 0 10px 10px;
 }
 
-.pro-details table td {
+.pro-details table tr:not(:last-child) {
     border-bottom: lightgrey 1px solid;
 }
 
@@ -379,4 +378,12 @@ a {
     background-color: #f6ea85;
     width: auto;
     max-width: fit-content;
+}
+
+#career-info {
+    grid-template-columns: auto;
+}
+
+.basic-border {
+    border: lightgray 1px solid;
 }

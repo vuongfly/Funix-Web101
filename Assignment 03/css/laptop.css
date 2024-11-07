@@ -12,13 +12,21 @@
         border-left: 1px solid var(--certi-border-color);
     }
 
-    .row.certification .certi-container:nth-child(n+4) {
-        border-top: 1px solid var(--certi-border-color);
-    }
+
+    /*.row.certification .certi-container:nth-child(n+4) {*/
+    /*    border-top: 1px solid var(--certi-border-color);*/
+    /*}*/
 
     /*#career-info {*/
     /*    max-height: 1200px;*/
     /*}*/
 
+    .name {
+        font-size: 4em;
+    }
+
+    #career-info {
+        grid-template-columns: auto auto auto;
+    }
 
 }
