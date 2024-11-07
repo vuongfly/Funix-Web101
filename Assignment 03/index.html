@@ -27,7 +27,7 @@
         </div>
     </div>
     <!--    Navbar  -->
-    <nav id="nav-bar" class="navbar navbar-expand-md">
+    <nav id="nav-bar" class="navbar navbar-expand-md ">
         <div class="nav-bar-item"><i class="fa-solid fa-user cl-blue-icon"></i>Thông tin</div>
         <div class="nav-bar-item"><i class="fa-solid fa-file-lines cl-blue-icon"></i>Lý Lịch</div>
         <div class="avatar"><img src="images/default-avatar.png" alt="avatar" srcset=""></div>
@@ -67,9 +67,11 @@
                                 <input
                                         pattern="^(([^&lt;&gt;()[\]\\.,;:\s@&quot;]+(\.[^&lt;&gt;()[\]\\.,;:\s@&quot;]+)*)|(&quot;.+&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$"
                                         class="form-control" id="email-input" placeholder="Enter email">
-                                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                <small class="form-text text-muted">We'll never share your email with anyone
+                                    else.</small>
                             </div>
-                            <button id="btn-info" type="button" class="btn btn-primary" onclick="checkEmail()">Submit</button>
+                            <button id="btn-info" type="button" class="btn btn-primary" onclick="checkEmail()">Submit
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -78,170 +80,167 @@
 
         <!--    Thong tin nghe nghiep    -->
         <div class="container g-4 m-auto" id="career-info">
-            <div class="row"><!--    Kinh Nghiem     -->
-                <div class="col-lg-4 col-md-6 col-12 section">
-                    <div class="">
-                        <div class="container ps-4 pt-4">
-                            <div class="row">
-                                <span class="col-9 section-title">Kinh nghiệm</span>
-                                <i class="col-3 fa-solid fa-briefcase section-icon"></i>
-                            </div>
+            <div class="row">
+                <!--    Kinh Nghiem     -->
+                <div class="col-lg-4 col-md-6 col-12 section-info">
+                    <div class="container ps-4 pt-4">
+                        <div class="row">
+                            <span class="col-9 section-title">Kinh nghiệm</span>
+                            <i class="col-3 fa-solid fa-briefcase section-icon"></i>
                         </div>
-                        <div class="section-content grid-col-40px">
+                    </div>
+                    <div class="section-content grid-col-40px">
 
-                            <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
-                            <div class="exp-item">
-                                <span class="item-title">Java Web Developer - Công ty ETC</span> <br>
-                                <span class="time-range">8/2022 - 08/2023</span>
-                                <ul>
-                                    <li>Tham gia xây dựng website hệ thống Đăng ký xe (C08), quản lý tài sản (C03),
-                                        Evisa
-                                        (A08)
-                                    </li>
-                                    <li>Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL Oracle và viết được
-                                        các
-                                        câu truy vấn, Store procedure.
-                                    </li>
-                                    <li>Xây dựng template để đổ thông tin vào in các tài liệu, giấy chứng nhận theo mẫu
-                                        sử
-                                        dụng
-                                    </li>
-                                    <li>Gửi email thông báo đến người dùng</li>
-                                    <li>Validate, CRUD các bảng trong CSDL</li>
-                                    <li>Tech stack: Spring Boot, Hibernate, Oracle, MinIO, Go text template, Flyway</li>
-                                </ul>
-                            </div>
+                        <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
+                        <div class="exp-item">
+                            <span class="item-title">Java Web Developer - Công ty ETC</span> <br>
+                            <span class="time-range">8/2022 - 08/2023</span>
+                            <ul>
+                                <li>Tham gia xây dựng website hệ thống Đăng ký xe (C08), quản lý tài sản (C03),
+                                    Evisa
+                                    (A08)
+                                </li>
+                                <li>Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL Oracle và viết được
+                                    các
+                                    câu truy vấn, Store procedure.
+                                </li>
+                                <li>Xây dựng template để đổ thông tin vào in các tài liệu, giấy chứng nhận theo mẫu
+                                    sử
+                                    dụng
+                                </li>
+                                <li>Gửi email thông báo đến người dùng</li>
+                                <li>Validate, CRUD các bảng trong CSDL</li>
+                                <li>Tech stack: Spring Boot, Hibernate, Oracle, MinIO, Go text template, Flyway</li>
+                            </ul>
+                        </div>
 
-                            <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
-                            <div class="exp-item">
-                                <span class="item-title">Java Web Developer - Công ty One Mount</span> <br>
-                                <span class="time-range">10/2021 - 05/2022</span>
-                                <ul>
-                                    <li>Tham gia xây dựng website backoffice cho Admin quản lý thông tin của nhân viên,
-                                        cộng
-                                        tác viên, khách hàng, tài sản nhà đất, BĐS,...
-                                    </li>
-                                    <li>Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL MySql và viết được
-                                        các
-                                        câu truy vấn.
-                                    </li>
-                                    <li>Sử dụng các công cụ: Jira, Confluence.</li>
-                                    <li>Tech stack: Spring Boot, Hibernate, MySql, Flyway</li>
-                                </ul>
-                            </div>
+                        <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
+                        <div class="exp-item">
+                            <span class="item-title">Java Web Developer - Công ty One Mount</span> <br>
+                            <span class="time-range">10/2021 - 05/2022</span>
+                            <ul>
+                                <li>Tham gia xây dựng website backoffice cho Admin quản lý thông tin của nhân viên,
+                                    cộng
+                                    tác viên, khách hàng, tài sản nhà đất, BĐS,...
+                                </li>
+                                <li>Phân tích và thiết kế Database, sử dụng các hệ quản trị CSDL MySql và viết được
+                                    các
+                                    câu truy vấn.
+                                </li>
+                                <li>Sử dụng các công cụ: Jira, Confluence.</li>
+                                <li>Tech stack: Spring Boot, Hibernate, MySql, Flyway</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
                 <!--    Hoc Van     -->
-                <div class="col-lg-4 col-md-6 col-12 section">
-                    <div class="">
-                        <div class="container ps-4 pt-4">
-                            <div class="row">
-                                <span class="col-9 section-title">Học vấn</span>
-                                <i class="col-3 fa-solid fa-pen section-icon"></i>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-12 section-info">
+                    <div class="container ps-4 pt-4">
+                        <div class="row">
+                            <span class="col-9 section-title">Học vấn</span>
+                            <i class="col-3 fa-solid fa-pen section-icon"></i>
                         </div>
-                        <div class="section-content grid-col-40px">
-                            <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
-                            <div class="edu-item">
-                                <span class="item-title">FUNIX</span> <br>
-                                <span class="time-range">06/2021 - 05/2022</span> <br>
-                                <ul>
-                                    <li>Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack.</li>
-                                    <li>GPA: 9 / 10</li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="section-content grid-col-40px">
+                        <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
+                        <div class="edu-item">
+                            <span class="item-title">FUNIX</span> <br>
+                            <span class="time-range">06/2021 - 05/2022</span> <br>
+                            <ul>
+                                <li>Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack.</li>
+                                <li>GPA: 9 / 10</li>
+                            </ul>
+                        </div>
 
-                            <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
-                            <div class="edu-item">
-                                <span class="item-title">Cử nhân-ĐH FPT</span> <br>
-                                <span class="time-range">08/2014 - 07/2019</span> <br>
-                                <ul>
-                                    <li>Chuyên ngành: Kỹ sư phần mềm.</li>
-                                    <li>GPA: 2.5 / 4</li>
-                                </ul>
-                            </div>
+                        <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
+                        <div class="edu-item">
+                            <span class="item-title">Cử nhân-ĐH FPT</span> <br>
+                            <span class="time-range">08/2014 - 07/2019</span> <br>
+                            <ul>
+                                <li>Chuyên ngành: Kỹ sư phần mềm.</li>
+                                <li>GPA: 2.5 / 4</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <!--    Hoat Dong     -->
-                <div class="col-lg-4 col-md-6 col-12 section">
-                    <div class="">
-                        <div class="container ps-4 pt-4">
-                            <div class="row">
-                                <span class="col-9 section-title">Hoạt động</span>
-                                <i class="col-3 fa-solid fa-briefcase section-icon"></i>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-12 section-info">
+                    <div class="container ps-4 pt-4">
+                        <div class="row">
+                            <span class="col-9 section-title">Hoạt động</span>
+                            <i class="col-3 fa-solid fa-briefcase section-icon"></i>
                         </div>
-                        <div class="section-content grid-col-40px">
+                    </div>
+                    <div class="section-content grid-col-40px">
 
-                            <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
-                            <div class="activity-item">
-                                <span class="item-title">Câu lạc bộ Sách</span> <br>
-                                <span class="time-range">08/2014 - 08/2017</span> <br>
-                                <ul>
-                                    <li>Thành viên ban nội dung.</li>
-                                    <li>Thành viên ban đội bóng CLB, dành HC bạc trong giải các CLB của trường. Là CLB
-                                        duy
-                                        nhất được mời tham gia giải bóng đá kì niệm 15 năm khối giáo dục của FPT
-                                    </li>
-                                    <li>Tham gia viết bài cho fanpage của CLB</li>
-                                </ul>
-                            </div>
+                        <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
+                        <div class="activity-item">
+                            <span class="item-title">Câu lạc bộ Sách</span> <br>
+                            <span class="time-range">08/2014 - 08/2017</span> <br>
+                            <ul>
+                                <li>Thành viên ban nội dung.</li>
+                                <li>Thành viên ban đội bóng CLB, dành HC bạc trong giải các CLB của trường. Là CLB
+                                    duy
+                                    nhất được mời tham gia giải bóng đá kì niệm 15 năm khối giáo dục của FPT
+                                </li>
+                                <li>Tham gia viết bài cho fanpage của CLB</li>
+                            </ul>
+                        </div>
 
-                            <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
-                            <div class="activity-item">
-                                <span class="item-title">Câu lạc bộ Debate</span><br>
-                                <span class="time-range">08/2014 - 08/2017</span><br>
-                                <ul>
-                                    <li>Thành viên CLB debate.</li>
-                                    <li>Tổ chức và tham dự giải đấu debate giữa các trường khu vực HN</li>
-                                    <li>Thành viên ban đội bóng CLB</li>
-                                </ul>
-                            </div>
+                        <div><i class="fa-solid fa-circle cl-blue-icon"></i></div>
+                        <div class="activity-item">
+                            <span class="item-title">Câu lạc bộ Debate</span><br>
+                            <span class="time-range">08/2014 - 08/2017</span><br>
+                            <ul>
+                                <li>Thành viên CLB debate.</li>
+                                <li>Tổ chức và tham dự giải đấu debate giữa các trường khu vực HN</li>
+                                <li>Thành viên ban đội bóng CLB</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <!--    So Thich    -->
-                <div class="col-lg-4 col-md-6 col-12 section">
-                    <div class="">
-                        <div class="section-title ps-4">Sở thích</div>
-                        <div class="section-content container">
-                            <div class="row">
-                                <div class="col-6 col-sm-3">
-                                    <div class="icon-container">
-                                        <div class="hobby-icon">
-                                            <i class="fa-solid fa-music cl-blue-icon"></i>
-                                        </div>
-                                        <div class="text-center">Âm nhạc</div>
+                <div class="col-lg-4 col-md-6 col-12 section-info">
+                    <div class="container ps-4 pt-4">
+                        <div class="row">
+                            <span class="col-9 section-title">Sở thích</span>
+                            <i class="col-3 fa-solid fa-briefcase section-icon"></i>
+                        </div>
+                    </div>
+                    <div class="section-content container">
+                        <div class="row">
+                            <div class="col-6 col-sm-3">
+                                <div class="icon-container">
+                                    <div class="hobby-icon">
+                                        <i class="fa-solid fa-music cl-blue-icon"></i>
                                     </div>
+                                    <div class="text-center">Âm nhạc</div>
                                 </div>
-                                <div class="col-6 col-sm-3">
-                                    <div class="icon-container">
-                                        <div class="hobby-icon">
-                                            <i class="fa-solid fa-chess-knight cl-blue-icon"></i>
-                                        </div>
-                                        <div class="text-center">Chơi game</div>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <div class="icon-container">
+                                    <div class="hobby-icon">
+                                        <i class="fa-solid fa-chess-knight cl-blue-icon"></i>
                                     </div>
+                                    <div class="text-center">Chơi game</div>
                                 </div>
-                                <div class="col-6 col-sm-3">
-                                    <div class="icon-container">
-                                        <div class="hobby-icon">
-                                            <i class="fa-solid fa-plane cl-blue-icon"></i>
-                                        </div>
-                                        <div class="text-center">Du lịch</div>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <div class="icon-container">
+                                    <div class="hobby-icon">
+                                        <i class="fa-solid fa-plane cl-blue-icon"></i>
                                     </div>
+                                    <div class="text-center">Du lịch</div>
                                 </div>
-                                <div class="col-6 col-sm-3">
-                                    <div class="icon-container">
-                                        <div class="hobby-icon">
-                                            <i class="fa-solid fa-utensils cl-blue-icon"></i>
-                                        </div>
-                                        <div class="text-center">Nấu ăn</div>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <div class="icon-container">
+                                    <div class="hobby-icon">
+                                        <i class="fa-solid fa-utensils cl-blue-icon"></i>
                                     </div>
+                                    <div class="text-center">Nấu ăn</div>
                                 </div>
                             </div>
                         </div>
@@ -249,60 +248,65 @@
                 </div>
 
                 <!--    Ngon Ngu    -->
-                <div class="col-lg-4 col-md-6 col-12 section">
-                    <div class="">
-                        <div class="section-title ps-4">Ngôn ngữ</div>
-                        <div class="section-content language ps-4">
-                            <div class="language-item">
-                                <span>Tiếng Anh - IELTS 5.0</span><br>
-                                <span class="blue-line"></span>
-                                <span class="grey-line"></span>
-                                <span class="grey-line"></span>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-12 section-info">
+                    <div class="container ps-4 pt-4">
+                        <div class="row">
+                            <span class="col-9 section-title">Ngôn ngữ</span>
+                            <i class="col-3 fa-solid fa-briefcase section-icon"></i>
+                        </div>
+                    </div>
+                    <div class="section-content language ps-4">
+                        <div class="language-item">
+                            <span>Tiếng Anh - IELTS 5.0</span><br>
+                            <span class="blue-line"></span>
+                            <span class="grey-line"></span>
+                            <span class="grey-line"></span>
                         </div>
                     </div>
                 </div>
 
                 <!--    Ky Nang    -->
-                <div class="col-lg-4 col-md-6 col-12 section">
-                    <div class="">
-                        <div class="section-title ps-4">Kỹ năng</div>
-                        <div class="section-content language ps-4">
-                            <div class="language-item">
-                                <span>HTML/CSS: Fundamental</span><br>
-                                <span class="blue-line"></span>
-                                <span class="grey-line"></span>
-                                <span class="grey-line"></span>
-                            </div>
-                            <div class="language-item">
-                                <span>Spring Boot: Intermediate</span><br>
-                                <span class="blue-line"></span>
-                                <span class="blue-line"></span>
-                                <span class="grey-line"></span>
-                            </div>
-                            <div class="language-item">
-                                <span>Oralce: Intermediate</span><br>
-                                <span class="blue-line"></span>
-                                <span class="blue-line"></span>
-                                <span class="grey-line"></span>
-                            </div>
-                            <div class="language-item">
-                                <span>MySQL: Intermediate </span><br>
-                                <span class="blue-line"></span>
-                                <span class="blue-line"></span>
-                                <span class="grey-line"></span>
-                            </div>
-                            <div class="language-item">
-                                <span>Data structure & Algorithms: Intermediate </span><br>
-                                <span class="blue-line"></span>
-                                <span class="blue-line"></span>
-                                <span class="grey-line"></span>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-12 section-info">
+                    <div class="container ps-4 pt-4">
+                        <div class="row">
+                            <span class="col-9 section-title">Kỹ năng</span>
+                            <i class="col-3 fa-solid fa-briefcase section-icon"></i>
+                        </div>
+                    </div>
+                    <div class="section-content language ps-4">
+                        <div class="language-item">
+                            <span>HTML/CSS: Fundamental</span><br>
+                            <span class="blue-line"></span>
+                            <span class="grey-line"></span>
+                            <span class="grey-line"></span>
+                        </div>
+                        <div class="language-item">
+                            <span>Spring Boot: Intermediate</span><br>
+                            <span class="blue-line"></span>
+                            <span class="blue-line"></span>
+                            <span class="grey-line"></span>
+                        </div>
+                        <div class="language-item">
+                            <span>Oralce: Intermediate</span><br>
+                            <span class="blue-line"></span>
+                            <span class="blue-line"></span>
+                            <span class="grey-line"></span>
+                        </div>
+                        <div class="language-item">
+                            <span>MySQL: Intermediate </span><br>
+                            <span class="blue-line"></span>
+                            <span class="blue-line"></span>
+                            <span class="grey-line"></span>
+                        </div>
+                        <div class="language-item">
+                            <span>Data structure & Algorithms: Intermediate </span><br>
+                            <span class="blue-line"></span>
+                            <span class="blue-line"></span>
+                            <span class="grey-line"></span>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="container certi-bg-color mb-5 py-5">
@@ -368,7 +372,9 @@
 
                     <div class="col-lg-4 col-md-4 col-12 d-flex flex-column ">
                         <div class="pro-img"><img src="images/project_1.png" alt="project1"></div>
-                        <a href="./project.html"><div class="pro-title flex-row">cv cá nhân</div></a>
+                        <a href="./project.html">
+                            <div class="pro-title flex-row">cv cá nhân</div>
+                        </a>
                         <div class="pro-role flex-row">
                             <div class="pro-time">2021</div>
                             <div class="pro-org">Funix</div>
@@ -395,7 +401,9 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-12 d-flex flex-column">
                         <div class="pro-img"><img src="images/project_2.png" alt="project2"></div>
-                        <a href="./project.html"><div class="pro-title flex-row">Trang web quản lý thú cưng</div></a>
+                        <a href="./project.html">
+                            <div class="pro-title flex-row">Trang web quản lý thú cưng</div>
+                        </a>
                         <div class="pro-role flex-row">
                             <div class="pro-time">2021</div>
                             <div class="pro-org">Funix</div>
@@ -423,7 +431,9 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-12 d-flex flex-column">
                         <div class="pro-img"><img src="images/project_3.png" alt="project3"></div>
-                        <a href="./project.html"><div class="pro-title flex-row">cv cá nhân</div></a>
+                        <a href="./project.html">
+                            <div class="pro-title flex-row">cv cá nhân</div>
+                        </a>
                         <div class="pro-role flex-row">
                             <div class="pro-time">2021</div>
                             <div class="pro-org">Funix</div>
@@ -469,7 +479,7 @@
 
 </div>
 
-<div class="d-none view-more" id="view-more-btn">
+<div class="d-none invisible view-more mb-3" id="view-more-btn">
     <span>View more</span>
 </div>
 <script src="js/script.js"></script>

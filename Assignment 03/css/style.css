@@ -114,6 +114,7 @@ img, .avatar > img {
     display: flex;
     align-items: center;
     align-content: center;
+    border: lightgray 1px solid;
 }
 
 
@@ -194,7 +195,7 @@ ul {
     color: #0e2452;
 }
 
-.section {
+.section-info {
     border: lightgray 1px solid;
     position: relative;
 }
@@ -386,4 +387,13 @@ a {
 
 .basic-border {
     border: lightgray 1px solid;
+}
+
+.basic-border-y {
+    border-top: lightgray 1px solid;
+    border-bottom: lightgray 1px solid;
+}
+
+.row.certification .certi-container:not(:last-child) {
+    border-bottom: 1px solid var(--certi-border-color);
 }

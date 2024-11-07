@@ -1,8 +1,8 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
+
     .avatar {
         display: none;
     }
-
     .pro-container {
         margin: auto;
     }
@@ -10,18 +10,6 @@
     .row.certification .certi-container:nth-child(odd) {
         border-left: 1px solid var(--certi-border-color);
     }
-
-
-
-    /*.row.certification .certi-container:nth-child(n+4) {*/
-    /*    border-top: 1px solid var(--certi-border-color);*/
-    /*}*/
-    /*#career-info {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    flex-wrap: wrap;*/
-    /*    max-height: 2000px;*/
-    /*}*/
 
     #career-info {
         grid-template-columns: auto auto;
